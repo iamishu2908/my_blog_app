@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './Post.css'
-const BASE_URL = 'http://localhost:8000/'
+// const BASE_URL = 'http://localhost:8000/'
 
 function Post({post})
 {
@@ -8,7 +8,8 @@ function Post({post})
 
     useEffect(()=>
     {
-        setImageUrl(BASE_URL + post.image_url)
+        // setImageUrl(BASE_URL + post.image_url)
+        setImageUrl( post.image_url)
     }, [])
 
     return (
