@@ -15,6 +15,14 @@ function Post({post})
     return (
         <div className = 'post'>
             <img className='post_image' src = {imageUrl}/>
+            <div className='post_content'>
+                <div className='post_title'>{post.title}</div>
+                <div className='post_creator'>{post.creator}</div>
+                <div className='post_text'>{post.content}</div>
+                <div className='post_delete'>
+                    <button onClick={null}>Delete post</button>
+                </div>
+            </div>
 
         </div>
     )

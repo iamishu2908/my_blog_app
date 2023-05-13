@@ -6,4 +6,7 @@
   font-size: 60px;
   justify-content: center;
   padding: 20px;
+  background-color: rgb(121, 102, 198);
+  color: antiquewhite;
+  font-family: monospace;
 }

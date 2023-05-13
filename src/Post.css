@@ -10,7 +10,32 @@
 
 .post_image {
     display: block;
-    width: 100%;
+    width: 20%;
     object-fit: contain;
-    padding-right: 10px;
+    padding-right: 30px;
+}
+
+.post_content{
+    display: block;
+}
+
+.post_title{
+    font-size: xx-large;
+}
+
+.post_text{
+    white-space: pre-line;
+}
+/* white space is for preserving new lines and carriage returns.
+these might go away when we save html code in db and then retrieve it later. */
+
+.post_delete{
+    margin: 10px;
+}
+
+.post_creator{
+    font-size: small;
+    font-style: italic;
+    margin: 5px;
+    margin-left: 10px;
 }
