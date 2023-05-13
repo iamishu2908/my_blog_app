@@ -10,3 +10,14 @@
   color: antiquewhite;
   font-family: monospace;
 }
+
+.New_post{
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.App{
+  background-color: aquamarine;
+}
