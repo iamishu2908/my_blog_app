@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './Post.css'
-// const BASE_URL = 'http://localhost:8000/'
+const BASE_URL = 'http://localhost:8000/'
 
 function Post({post})
 {
@@ -12,6 +12,26 @@ function Post({post})
         setImageUrl( post.image_url)
     }, [])
 
+    const handleDelete = (event) => {
+        event?.preventDefault()
+
+        const requestOptions = {
+            method : 'DELETE'
+        }
+
+        fetch(BASE_URL + 'post/' + post.id, requestOptions)
+        .then(response => {
+            if (response.ok){
+                window.location.reload()
+
+            }
+            throw response
+        })
+        .catch(error => {
+            console.log(error);
+        })
+    }
+
     return (
         <div className = 'post'>
             <img className='post_image' src = {imageUrl}/>
@@ -20,7 +40,7 @@ function Post({post})
                 <div className='post_creator'>{post.creator}</div>
                 <div className='post_text'>{post.content}</div>
                 <div className='post_delete'>
-                    <button onClick={null}>Delete post</button>
+                    <button onClick={handleDelete}>Delete post</button>
                 </div>
             </div>
 

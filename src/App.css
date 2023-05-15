@@ -6,9 +6,9 @@
   font-size: 60px;
   justify-content: center;
   padding: 20px;
-  background-color: rgb(121, 102, 198);
-  color: antiquewhite;
-  font-family: monospace;
+  background-color: rgb(30, 215, 96);
+  color: white;
+  font-family: Helvetica;
 }
 
 .New_post{
@@ -19,5 +19,5 @@
   margin-right: auto;
 }
 .App{
-  background-color: aquamarine;
+  background-color: rgb(25 20 20);
 }
